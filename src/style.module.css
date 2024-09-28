@@ -1,3 +1,10 @@
 .page {
-  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+  border: 10px solid red;
 }
