@@ -1,17 +1,68 @@
 {
   "personal": {
-    "data": {
-      "name": "Novitskiy Vladislav",
-      "post": "JS Developer",
-      "photoURL": "photo.webp"
-    }
+    "name": "Новицкий Владислав",
+    "post": "frontend-разработчик/фронтенд-разработчик",
+    "photoURL": "photo.webp"
   },
+  "skills": [
+    {
+      "title": "Основной стек",
+      "list": [
+        "Typescript",
+        "Javascript",
+        "HTML/CSS"
+      ]
+    },
+    {
+      "title": "Дополнительно",
+      "list": [
+        "VB, VBA",
+        "bash",
+        "Си",
+        "MASM32"
+      ]
+    },
+    {
+      "title": "Работа с БД",
+      "list": [
+        "firebase",
+        "mongodb"
+      ]
+    },
+    {
+      "title": "Фреймворки, технологии",
+      "list": [
+        "React",
+        "Redux",
+        "Jest",
+        "React-testing-library",
+        "Playwright",
+        "Next.js"
+      ]
+    },
+    {
+      "title": "Инструменты разработки",
+      "list": [
+        "Git",
+        "Webpack",
+        "NPM",
+        "Husky",
+        "ESLint",
+        "Prettier",
+        "Figma",
+        "GitHub, GitLab, BitBucket",
+        "VSCode",
+        "Postman",
+        "Jira"
+      ]
+    }
+  ],
   "experience": [
     {
       "mostRecent": true,
-      "dates": "Jun.2024 - Present",
-      "postTitle": "Intern-Engineer",
-      "postDescription": "Frontend developer",
+      "dates": "Июнь 2024 - н.в.",
+      "postTitle": "Стажер-инженер",
+      "postDescription": "javascript-разработчик",
       "responsibilities": [
         "Plan, estimate and develop tasks",
         "Refactor and optimize code",
@@ -22,139 +73,33 @@
     {
       "mostRecent": false,
       "dates": "2009 - 2024",
-      "postTitle": "Civil Engineer",
-      "postDescription": "Civil engineering quality control",
+      "postTitle": "Инженер строительного контроля",
+      "postDescription": "Контроль качества строительных работ",
       "responsibilities": [
-        "Control over the execution of construction and installation works, acceptance of completed construction projects",
-        "Control over the implementation of the capital construction plan",
-        "Control over the compliance of the volume of work, deadlines and quality of construction and materials used"
+        "Проведение проверок согласно нормативно-технических документов",
+        "Контроль соблюдения проектной документации",
+        "Составление регламентов, планов и отчётов"
       ]
     },
     {
       "mostRecent": false,
       "dates": "2006 - 2009",
-      "postTitle": "Hydraulic engineer",
-      "postDescription": "Workshop foreman",
+      "postTitle": "Инженер гидравлик",
+      "postDescription": "Мастер цеха",
       "responsibilities": [
         "Control over the execution of production works, acceptance of completed construction projects",
         "Submission of work to the controllers of the control department"
       ]
     }
   ],
-  "tools": {
-    "languages": [],
-    "libraries": [],
-    "other": []
-  },
-  "education": [
-    {
-      "favourite": true,
-      "dates": "2024 - Present",
-      "title": "Student",
-      "tags": [
-        "C-lang",
-        "check-lib",
-        "debugging",
-        "team-work"
-      ],
-      "organization": "School-21 educational project of Sber"
-    },
-    {
-      "favourite": false,
-      "dates": "2023 - 2024",
-      "title": "Frontend developer",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Redux",
-        "jest",
-        "redux-toolkit",
-        "react-testing-library",
-        "playwright"
-      ],
-      "organization": ""
-    },
-    {
-      "favourite": false,
-      "dates": "2009",
-      "title": "Civil engineer",
-      "tags": [
-        "construction",
-        "engineering",
-        "architecture",
-        "services"
-      ],
-      "organization": "Karaganda State University"
-    },
-    {
-      "favourite": false,
-      "dates": "2006",
-      "title": "Hydraulic machines and automatic engineer",
-      "tags": [
-        "automation",
-        "engineering",
-        "mechanics",
-        "machines"
-      ],
-      "organization": "Karaganda State University"
-    }
-  ],
-  "interests": [
-    {
-      "name": "webdev"
-    },
-    {
-      "name": "frameworks"
-    },
-    {
-      "name": "communication"
-    },
-    {
-      "name": "time-management"
-    },
-    {
-      "name": "problem-solving"
-    },
-    {
-      "name": "teamwork"
-    },
-    {
-      "name": "leadership"
-    },
-    {
-      "name": "technical writing"
-    },
-    {
-      "name": "design"
-    },
-    {
-      "name": "photography"
-    },
-    {
-      "name": "artificial intelligence"
-    },
-    {
-      "name": "illustration"
-    },
-    {
-      "name": "typography"
-    },
-    {
-      "name": "social networks"
-    },
-    {
-      "name": "research"
-    }
-  ],
   "languages": [
     {
-      "name": "Russian",
+      "name": "Русский",
       "mark": 10
     },
     {
       "name": "English",
+      "grade": "B2 Upper Intermediate",
       "mark": 8
     },
     {
@@ -163,11 +108,52 @@
     }
   ],
   "contacts": {
-    "message": {
-      "text": "Let´s chat! I´m ready to work on exciting projects"
-    },
-    "mail": {
-      "text": "vladislav@nvtsk.ru"
-    }
+    "phone": "+79038117314",
+    "mail": "vladislav@nvtsk.ru",
+    "github": "v-nvtsk",
+    "telegram": "no_vlad",
+    "city": "Москва"
+  },
+  "education": {
+    "higherEducation": [
+      {
+        "institution": "Карагандинский Государственный Технический Университет",
+        "specialization": "Строительство, бакалавр",
+        "city": "Караганда",
+        "endDate": "2009"
+      },
+      {
+        "institution": "Карагандинский Государственный Технический Университет",
+        "specialization": "Гидравлические машины, гидроприводы и гидропневмоавтоматика, инженер",
+        "city": "Караганда",
+        "endDate": "2006"
+      }
+    ],
+    "courses": [
+      {
+        "institution": "Школа 21-образовательный проект от Сбер для разработчиков",
+        "specialization": "Основное обучение",
+        "startDate": "2024",
+        "endDate": "2024 - н.в"
+      },
+      {
+        "institution": "Отус-онлайн образование",
+        "specialization": "JS-professional",
+        "startDate": "2024",
+        "endDate": "2024 - н.в"
+      },
+      {
+        "institution": "Отус-онлайн образование",
+        "specialization": "JS-basic",
+        "startDate": "2024",
+        "endDate": "2024"
+      },
+      {
+        "institution": "Отус-онлайн образование",
+        "specialization": "HTML/CSS",
+        "startDate": "2023",
+        "endDate": "2023"
+      }
+    ]
   }
 }
