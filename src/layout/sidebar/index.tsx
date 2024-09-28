@@ -1,19 +1,10 @@
-import { Contacts } from '@/components/contacts'
-import { Education } from '@/components/education'
-import { Languages } from '@/components/languages'
-import { Skills } from '@/components/skills'
-import { Photo } from '@components/photo'
+import { PropsWithChildren } from 'react'
+import styles from './styles.module.css'
 
-function Sidebar() {
+export function Sidebar({ children }: PropsWithChildren) {
   return (
-    <div>
-      <Photo />
-      <Contacts />
-      <Skills />
-      <Languages />
-      <Education />
-    </div>
+    <aside className={styles.sidebar}>
+      {children}
+    </aside>
   )
 }
-
-export default Sidebar
