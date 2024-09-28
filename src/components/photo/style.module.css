@@ -1,0 +1,31 @@
+.sectionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 123px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+@media (hover: hover) {
+  .image:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* 
+.image:hover{
+  transform: scale(1.1);
+} */

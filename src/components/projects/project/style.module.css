@@ -1,0 +1,23 @@
+.project {
+  display: grid;
+  grid-template-areas:
+    "title stack"
+    "link link"
+    "description description";
+}
+
+.link {
+  grid-area: link;
+}
+
+.title {
+  grid-area: title;
+}
+
+.stack {
+  grid-area: stack;
+}
+
+.description {
+  grid-area: description;
+}

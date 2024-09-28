@@ -1,7 +1,11 @@
+import styles from './style.module.css'
+
 export function Photo() {
   return (
-    <div className="photo">
-      <img src="/photo.webp" alt="portrait" className="photo_img" />
-    </div>
+    <section className={styles.sectionWrapper}>
+      <div className={styles.imageWrapper}>
+        <img src="/photo.webp" alt="portrait" className={styles.image} />
+      </div>
+    </section>
   )
 }

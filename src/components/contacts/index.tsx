@@ -1,27 +1,28 @@
-export function Contacts() {
+import { Contacts as ContactsProps } from '@/types'
+import { Title } from '@/UI'
+import styles from './style.module.css'
+
+export function ContactsItem({ title, link }: { title: string, link: string }) {
+  return (
+    <div className={styles.component}>
+      <a href={link} className={styles.link}>{title}</a>
+    </div>
+  )
+}
+
+export function Contacts({ contacts }: { contacts: ContactsProps }) {
+  const { phone, email, github, telegram, city } = contacts
+
   return (
     <div className="contacts">
-      <h2 className="contacts__title">Контакты</h2>
-      <div className="contacts__phone phone">
-        <a href="tel:+79038117314" className="phone__link"></a>
-        Name
-      </div>
-      <div className="contacts_email">
-        <a href="mailto:vladislav@nvtsk.ru" className="email__link"></a>
-        Name
-      </div>
-      <div className="contacts__github github">
-        <a href="https://github.com/v-nvtsk" className="github__link"></a>
-        Name
-      </div>
-      <div className="contacts__telegram telegram">
-        <a href="https://t.me/no_vlad" className="telegram__link"></a>
-        Name
-      </div>
-      <div className="contacts_city city">
-        <p className="city_name">Москва</p>
-        Name
-      </div>
+      <Title title="Контакты" />
+      {phone && <ContactsItem title={phone} link={'tel:' + phone} />}
+      {phone && <ContactsItem title={email} link={'mailto:' + email} />}
+      {phone && <ContactsItem title={email} link={'mailto:' + email} />}
+
+      {github && <ContactsItem title={'https://github.com/' + github} link={'https://github.com/' + github} />}
+      {telegram && <ContactsItem title={'@' + telegram} link={'https://t.me/' + telegram} />}
+      {city && <ContactsItem title={city} link={'https://www.google.ru/maps/place/' + city} />}
     </div>
   )
 }

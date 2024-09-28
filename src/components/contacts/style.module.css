@@ -1,0 +1,18 @@
+.component {
+  line-height: 1.5;
+
+  & a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+
+  & a:active,
+  & a:focus,
+  & a:visited {
+    color: "#fff";
+  }
+}

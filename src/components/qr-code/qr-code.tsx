@@ -12,5 +12,5 @@ export function QR({ text = '' }) {
     )
   }, [])
 
-  return canvasRef && <canvas ref={canvasRef} />
+  return canvasRef && <canvas width="100" height="100" ref={canvasRef} />
 }
