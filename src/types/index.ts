@@ -17,8 +17,8 @@ export interface ExperienceItem {
   mostRecent?: boolean
   startDate: string
   endDate: string
-  companyName: string
-  postTitle: string
+  organization?: string
+  post: string
   postDescription: string
   responsibilities: string[]
   achievements?: string[]
@@ -52,6 +52,7 @@ export interface PetProject {
   title: string
   stack: string[]
   link: string
+  deployLink?: string
   description: string
   hasMobileVersion?: boolean
 }
@@ -71,5 +72,5 @@ export interface CVData {
   skills: SkillsList
   education: Education
   experience: ExperienceList
-  petProjects: PetProjects
+  projects: PetProjects
 }

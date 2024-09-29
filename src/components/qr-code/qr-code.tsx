@@ -8,9 +8,10 @@ export function QR({ text = '' }) {
     QRCode.toCanvas(
       canvasRef.current,
       text,
+      { errorCorrectionLevel: 'L', margin: 0, scale: 3 },
       error => error && console.error(error),
     )
   }, [])
 
-  return canvasRef && <canvas width="100" height="100" ref={canvasRef} />
+  return canvasRef && <canvas ref={canvasRef} />
 }

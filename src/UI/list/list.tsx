@@ -3,12 +3,14 @@ import styles from './style.module.css'
 
 interface ListProps extends PropsWithChildren {
   listStyle?: string
+  padding?: number
 }
 
-export function List({ children, listStyle }: ListProps) {
+export function List({ children, listStyle, padding }: ListProps) {
   const style: Record<string, string> | null = listStyle
     ? {
         listStyleType: listStyle ?? 'none',
+        padding: padding + 'px',
       }
     : {}
 

@@ -7,7 +7,8 @@
 .imageWrapper {
   border-radius: 50%;
   overflow: hidden;
-  width: 123px;
+  min-width: 123px;
+  max-width: 60%;
   aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;

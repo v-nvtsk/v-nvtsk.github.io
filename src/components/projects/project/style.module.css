@@ -1,9 +1,17 @@
 .project {
   display: grid;
-  grid-template-areas:
-    "title stack"
-    "link link"
-    "description description";
+  grid-template-areas: "info qr";
+  column-gap: 5px;
+  /* grid-template-areas:
+    "title title qr"
+    "link link qr"
+    "description description qr"; */
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
 }
 
 .link {
@@ -20,4 +28,9 @@
 
 .description {
   grid-area: description;
+}
+
+.qr {
+  grid-area: qr;
+  justify-self: end;
 }

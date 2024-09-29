@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("./fonts/OpenSansCondensed-Light.ttf") format("truetype");
+}
+
 :root {
   --accent: #28d979;
   --tag-most-recent-bg: rgba(126, 115, 18, 0.4);
@@ -16,7 +21,7 @@
 }
 
 body {
-  font-family: "Open Sans", system-ui;
+  font-family: "Open Sans Condensed", system-ui;
   font-size: 14px;
   line-height: 150%;
 }
