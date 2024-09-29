@@ -57,41 +57,6 @@
       ]
     }
   ],
-  "experience": [
-    {
-      "mostRecent": true,
-      "dates": "Июнь 2024 - н.в.",
-      "postTitle": "Стажер-инженер",
-      "postDescription": "javascript-разработчик",
-      "responsibilities": [
-        "Plan, estimate and develop tasks",
-        "Refactor and optimize code",
-        "Participate in code reviews within the team",
-        "Interact with other teams"
-      ]
-    },
-    {
-      "mostRecent": false,
-      "dates": "2009 - 2024",
-      "postTitle": "Инженер строительного контроля",
-      "postDescription": "Контроль качества строительных работ",
-      "responsibilities": [
-        "Проведение проверок согласно нормативно-технических документов",
-        "Контроль соблюдения проектной документации",
-        "Составление регламентов, планов и отчётов"
-      ]
-    },
-    {
-      "mostRecent": false,
-      "dates": "2006 - 2009",
-      "postTitle": "Инженер гидравлик",
-      "postDescription": "Мастер цеха",
-      "responsibilities": [
-        "Control over the execution of production works, acceptance of completed construction projects",
-        "Submission of work to the controllers of the control department"
-      ]
-    }
-  ],
   "languages": [
     {
       "name": "Русский",
@@ -155,5 +120,126 @@
         "endDate": "2023"
       }
     ]
-  }
+  },
+  "projects": [
+    {
+      "title": "Календарь событий",
+      "stack": [
+        "react",
+        "typescript",
+        "redux/toolkit",
+        "react-router",
+        "firebase",
+        "jest",
+        "react-testing-library",
+        "playwright"
+      ],
+      "link": "https://github.com/v-nvtsk/otus-jsbasic-calendar",
+      "description": "Проект для учёта событий, задач. Поддерживает авторизацию пользователей по email и паролю."
+    },
+    {
+      "title": "Учет расходов",
+      "stack": [
+        "react",
+        "typescript",
+        "redux/toolkit",
+        "react-router",
+        "firebase",
+        "jest",
+        "react-testing-library"
+      ],
+      "link": "https://github.com/v-nvtsk/expenses-app",
+      "description": "Проект для учёта расходов. Позволяет добавлять расходы и отображать статистику с разбивкой по категориям."
+    },
+    {
+      "title": "Life game",
+      "stack": [
+        "html",
+        "css",
+        "canvas",
+        "typescript",
+        "jest"
+      ],
+      "link": "https://github.com/v-nvtsk/life-game",
+      "description": "Игра, в которой человек создаёт начальное состояние, а потом лишь наблюдает за её развитием."
+    },
+    {
+      "title": "Covid landing",
+      "stack": [
+        "html",
+        "css",
+        "javascript",
+        "webpack"
+      ],
+      "link": "https://github.com/v-nvtsk/covid-landing",
+      "description": "Лэндинг с адаптивным интерфейсом. Вёрстка по шаблону figma"
+    },
+    {
+      "title": "Mod studio",
+      "stack": [
+        "html",
+        "css",
+        "javascript",
+        "webpack"
+      ],
+      "link": "https://github.com/v-nvtsk/mod-studio",
+      "description": "Проектная работа по курсу HTML/CSS. Лэндинг с адаптивным интерфейсом. Вёрстка по шаблону figma"
+    },
+    {
+      "title": "Клиентский роутер",
+      "stack": [
+        "typescript",
+        "jest"
+      ],
+      "link": "https://github.com/v-nvtsk/npm-package-routelib",
+      "description": "Проект библиотеки для управления навигацией на стороне клиента. Поддерживает хэш и history-API роутинг."
+    },
+    {
+      "title": "Github-pages deploy",
+      "stack": [
+        "typescript",
+        "jest"
+      ],
+      "link": "https://github.com/v-nvtsk/otus-jsbasic-deploy-gh",
+      "description": "NPM пакет для публикации сборки в github-pages. Предоставляет интерактивный выбор параметров, либо через аргументы CLI."
+    }
+  ],
+  "experience": [
+    {
+      "mostRecent": true,
+      "dates": "Июнь 2024 - н.в.",
+      "startDate": "06.2024",
+      "endDate": "н.в.",
+      "post": "Стажер-инженер",
+      "organization": "ПАО \"Сбербанк России\"",
+      "postDescription": "javascript-разработчик",
+      "responsibilities": [
+        "Plan, estimate and develop tasks",
+        "Refactor and optimize code",
+        "Participate in code reviews within the team",
+        "Interact with other teams"
+      ]
+    },
+    {
+      "mostRecent": false,
+      "dates": "2009 - 2024",
+      "post": "Инженер строительного контроля",
+      "postDescription": "Контроль качества строительных работ",
+      "responsibilities": [
+        "Проведение проверок согласно нормативно-технических документов",
+        "Контроль соблюдения проектной документации",
+        "Составление регламентов, планов и отчётов"
+      ]
+    },
+    {
+      "mostRecent": false,
+      "dates": "2006 - 2009",
+      "postTitle": "Инженер гидравлик",
+      "postDescription": "Мастер цеха",
+      "responsibilities": [
+        "Control over the execution of production works, acceptance of completed construction projects",
+        "Submission of work to the controllers of the control department"
+      ]
+    }
+  ]
 }
