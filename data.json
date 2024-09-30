@@ -4,6 +4,15 @@
     "post": "frontend-разработчик/фронтенд-разработчик",
     "photoURL": "photo.webp"
   },
+  "about": {
+    "text": [
+      "Я начинающий фронтенд разработчик.",
+      "15 лет работал в строительстве инженером строительного контроля. Более 20 лет опыт любительского программирования. Всегда применял имеющиеся навыки программирования в работе: автоматизация отчётов и пр.",
+      "Три года назад начал изучать фронтенд, применяя js и html в работе с google документами, а в октябре 2 решил сменить профессию.",
+      "С июня 2023г. обучаюсь по специализации fullstack-разработчик в “OTUS - онлайн образование”. Закончил курсы “JS-basic” и “HTML/CSS” специализации, сейчас прохожу завершающий курс “JS-professional”.",
+      "C апреля 2024г. студент образовательного проекта Сбера - “Школы 21”."
+    ]
+  },
   "skills": [
     {
       "title": "Основной стек",
@@ -59,22 +68,14 @@
   ],
   "languages": [
     {
-      "name": "Русский",
-      "mark": 10
-    },
-    {
       "name": "English",
       "grade": "B2 Upper Intermediate",
       "mark": 8
-    },
-    {
-      "name": "Italian",
-      "mark": 2
     }
   ],
   "contacts": {
     "phone": "+79038117314",
-    "mail": "vladislav@nvtsk.ru",
+    "email": "vladislav@nvtsk.ru",
     "github": "v-nvtsk",
     "telegram": "no_vlad",
     "city": "Москва"
@@ -207,38 +208,28 @@
   "experience": [
     {
       "mostRecent": true,
-      "dates": "Июнь 2024 - н.в.",
       "startDate": "06.2024",
-      "endDate": "н.в.",
-      "post": "Стажер-инженер",
+      "post": "Стажер-инженер javascript",
       "organization": "ПАО \"Сбербанк России\"",
-      "postDescription": "javascript-разработчик",
+      "postDescription": "Разработка React-приложения с использованием архитектуры feature-sliced design на базе микрофронтендов",
       "responsibilities": [
-        "Plan, estimate and develop tasks",
-        "Refactor and optimize code",
-        "Participate in code reviews within the team",
-        "Interact with other teams"
+        "Добавил новые правила в ESLint, что повысило требования к качеству кода и улучшило читаемость и поддерживаемость проекта.",
+        "Увеличил покрытие кода тестами с 40% до 60%, что улучшило надежность и минимизировало количество регрессий в проекте.",
+        "Внёс вклад в разработку и поддержку внутренних библиотек проекта, что способствовало улучшению функциональности и ускорению разработки.",
+        "Работал над автоматизацией документации в Confluence, что позволило упростить процессы ведения и обновления документации."
       ]
     },
     {
+      "organization": "Cтроительство",
+      "startDate": "2009",
+      "endDate": "2024",
       "mostRecent": false,
-      "dates": "2009 - 2024",
       "post": "Инженер строительного контроля",
       "postDescription": "Контроль качества строительных работ",
       "responsibilities": [
         "Проведение проверок согласно нормативно-технических документов",
         "Контроль соблюдения проектной документации",
         "Составление регламентов, планов и отчётов"
-      ]
-    },
-    {
-      "mostRecent": false,
-      "dates": "2006 - 2009",
-      "postTitle": "Инженер гидравлик",
-      "postDescription": "Мастер цеха",
-      "responsibilities": [
-        "Control over the execution of production works, acceptance of completed construction projects",
-        "Submission of work to the controllers of the control department"
       ]
     }
   ]
