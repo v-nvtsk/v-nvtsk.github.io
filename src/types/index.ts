@@ -3,6 +3,10 @@ export interface PersonalInfo {
   post: string
 }
 
+export interface About {
+  text: string[]
+}
+
 export interface Contacts {
   phone: string
   email: string
@@ -67,6 +71,7 @@ export interface Language {
 
 export interface CVData {
   personal: PersonalInfo
+  about: About
   languages: Language[]
   contacts: Contacts
   skills: SkillsList

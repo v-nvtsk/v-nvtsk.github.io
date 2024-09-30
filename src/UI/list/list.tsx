@@ -6,13 +6,11 @@ interface ListProps extends PropsWithChildren {
   padding?: number
 }
 
-export function List({ children, listStyle, padding }: ListProps) {
-  const style: Record<string, string> | null = listStyle
-    ? {
-        listStyleType: listStyle ?? 'none',
-        padding: padding + 'px',
-      }
-    : {}
+export function List({ children, listStyle, padding = 0 }: ListProps) {
+  const style: Record<string, string> | null = {
+    listStyleType: listStyle ?? 'none',
+    paddingLeft: padding + 'px',
+  }
 
   return (
     <ul className={styles.list} style={style}>

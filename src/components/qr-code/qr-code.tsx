@@ -1,16 +1,24 @@
 import QRCode from 'qrcode'
 import { useEffect, useRef } from 'react'
 
-export function QR({ text = '' }) {
+interface Props {
+  text?: string
+  qrLevel?: 'L' | 'M' | 'Q' | 'H'
+  scale?: number
+}
+
+export function QR({ text = '', qrLevel = 'L', scale = 3 }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
-    QRCode.toCanvas(
-      canvasRef.current,
-      text,
-      { errorCorrectionLevel: 'L', margin: 0, scale: 3 },
-      error => error && console.error(error),
-    )
+    if (canvasRef.current) {
+      QRCode.toCanvas(
+        canvasRef.current,
+        text,
+        { errorCorrectionLevel: qrLevel, margin: 0, scale },
+        error => error && console.error(error),
+      )
+    }
   }, [])
 
   return canvasRef && <canvas ref={canvasRef} />

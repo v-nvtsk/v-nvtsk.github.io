@@ -24,7 +24,7 @@ function App() {
 
   if (isVoid(data)) return <p>Loading...</p>
 
-  const { personal, contacts, skills, languages, education, projects, experience } = data
+  const { personal, about, contacts, skills, languages, education, projects, experience } = data
 
   return (
     <div className={styles.page}>
@@ -37,9 +37,9 @@ function App() {
       </Sidebar>
       <Main>
         <Person name={personal.name} post={personal.post} />
-        <About />
-        <PetProjects projects={projects} />
         <Experience experience={experience} />
+        <About about={about} />
+        <PetProjects projects={projects} />
       </Main>
     </div>
   )

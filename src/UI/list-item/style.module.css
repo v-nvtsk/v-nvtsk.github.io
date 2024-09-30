@@ -1,8 +1,8 @@
-.listItem {
+.markedItem {
   position: relative;
 }
 
-.listItem::before {
+.markedItem::before {
   position: absolute;
 
   top: 0;

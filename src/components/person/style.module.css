@@ -1,0 +1,26 @@
+.personBlock {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "info qr";
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qr {
+  grid-area: qr;
+  display: none;
+}
+
+@media print {
+  .qr {
+    display: block;
+  }
+}

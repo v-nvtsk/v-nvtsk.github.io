@@ -12,9 +12,9 @@ export function Education({ education }: { education: EducationProps }) {
     <div className="education">
       <Title title="Образование" />
       <List>
-        <ListItem className="education__group">
+        <ListItem className="education__group" hideMark>
           <h3 className="education__title">Высшее образование</h3>
-          <List>
+          <List padding={10}>
             {education.higherEducation.map(({ institution, specialization, endDate }, index) => (
               <EducationItem key={index} institution={institution} specialization={specialization} endDate={endDate} />
 
@@ -23,7 +23,7 @@ export function Education({ education }: { education: EducationProps }) {
         </ListItem>
         <ListItem className="education__group">
           <h3 className="education__title">Дополнительное образование</h3>
-          <List>
+          <List padding={10}>
             {education.courses.map(({ institution, specialization, endDate }, index) => (
               <EducationItem key={index} institution={institution} specialization={specialization} endDate={endDate} />
             ))}

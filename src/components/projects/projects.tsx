@@ -10,7 +10,7 @@ export function PetProjects({ projects }: Props) {
   return (
     <section>
       <Title title="PET проекты" />
-      <List>
+      <List padding={0}>
         {projects.map((project, index) => (
           <Project key={index} {...project} />
         ))}

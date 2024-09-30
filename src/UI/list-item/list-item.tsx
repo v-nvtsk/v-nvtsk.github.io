@@ -3,11 +3,14 @@ import styles from './style.module.css'
 
 interface ListItemProps extends PropsWithChildren {
   className?: string
+  hideMark?: boolean
 }
 
-export function ListItem({ className, children }: ListItemProps) {
+export function ListItem({ className, children, hideMark }: ListItemProps) {
+  const markStyle = hideMark ? '' : styles.markedItem
+
   return (
-    <li className={[styles.listItem, className].join(' ')}>
+    <li className={[markStyle, className].join(' ')}>
       {children}
     </li>
   )

@@ -5,11 +5,11 @@
 }
 
 .imageWrapper {
-  border-radius: 50%;
+  border-radius: 100%;
   overflow: hidden;
-  min-width: 123px;
-  max-width: 60%;
   aspect-ratio: 1 / 1;
+  width: minmax(123px, 100%);
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,12 @@
   }
 }
 
-/* 
-.image:hover{
-  transform: scale(1.1);
-} */
+@media print {
+  .sectionWrapper {
+    display: block;
+  }
+
+  .imageWrapper {
+    margin: 0 auto;
+  }
+}
