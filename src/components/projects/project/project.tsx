@@ -12,7 +12,7 @@ export function Project({ title, stack, link, deployLink, description }: PetProj
           {' | '}
           {stack.join(', ')}
         </h3>
-        <a className={styles.link} href={link}>{link}</a>
+        <a className={styles.link} href={link} target="_blank">{link}</a>
         {deployLink && <a className={styles.link} href={deployLink}>{deployLink}</a>}
         <p className={styles.description}>{description}</p>
       </div>

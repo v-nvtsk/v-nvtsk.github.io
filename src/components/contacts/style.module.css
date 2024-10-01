@@ -1,20 +1,20 @@
 .component {
   line-height: 1.5;
+}
 
-  & a {
-    color: #ffffff;
-    text-decoration: none;
-  }
+.link {
+  color: var(--sidebar-text-color);
+  text-decoration: none;
+}
 
-  & a:hover {
-    text-decoration: underline;
-  }
+.link:hover {
+  text-decoration: underline;
+}
 
-  & a:active,
-  & a:focus,
-  & a:visited {
-    color: "#fff";
-  }
+.link:active,
+.link:focus,
+.link:visited {
+  color: var(--sidebar-text-color);
 }
 
 .contacts {
@@ -26,10 +26,13 @@
 @media print {
   .component {
     line-height: 1.5;
+  }
 
-    & a {
-      color: #000000;
-      text-decoration: none;
-    }
+  .link,
+  .link:active,
+  .link:focus,
+  .link:visited {
+    color: #000000;
+    text-decoration: none;
   }
 }
