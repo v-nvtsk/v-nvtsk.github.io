@@ -7,16 +7,25 @@ import { Person } from './components/person/person-name'
 import { Photo } from './components/photo'
 import { PetProjects } from './components/projects'
 import { Skills } from './components/skills'
-import './index.css'
 import { Main, Sidebar } from './layout'
-import styles from './style.module.css'
 import { fetchJSON } from './service/fetch-json'
 import { isVoid } from './service/is-void'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { CVData } from './types'
+
+import styles from './app.module.css'
+import { Header } from './layout/header'
+import { saveToPdf } from './service/save-pdf'
 
 function App() {
   const [data, setData] = useState<CVData | null>(null)
+  const [isQrVisible, setIsQrVisible] = useState(false)
+
+  const savePdfHandler = useCallback((ev: React.MouseEvent) => {
+    ev.preventDefault()
+    setIsQrVisible(true)
+    saveToPdf().then(() => setIsQrVisible(false))
+  }, [])
 
   useEffect(() => {
     fetchJSON().then(setData).catch(console.error)
@@ -27,21 +36,25 @@ function App() {
   const { personal, about, contacts, skills, languages, education, projects, experience } = data
 
   return (
-    <div className={styles.page}>
-      <Sidebar>
-        <Photo />
-        <Contacts contacts={contacts} />
-        <Skills skills={skills} />
-        <Languages languages={languages} />
-        <Education education={education} />
-      </Sidebar>
-      <Main>
-        <Person name={personal.name} post={personal.post} />
-        <Experience experience={experience} />
-        <About about={about} />
-        <PetProjects projects={projects} />
-      </Main>
-    </div>
+    <>
+      <Header savePdf={savePdfHandler} />
+      <div className={styles.whiteSpace} />
+      <div className={styles.page} id="page">
+        <Sidebar>
+          <Photo />
+          <Contacts contacts={contacts} />
+          <Skills skills={skills} />
+          <Languages languages={languages} />
+          <Education education={education} />
+        </Sidebar>
+        <Main>
+          <Person name={personal.name} post={personal.post} showQr={isQrVisible} />
+          <Experience experience={experience} />
+          <About about={about} />
+          <PetProjects projects={projects} showQr={isQrVisible} />
+        </Main>
+      </div>
+    </>
   )
 }
 

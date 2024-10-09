@@ -1,6 +1,8 @@
 import { Education as EducationProps } from '@/types'
 import { List, ListItem, Title } from '@/UI'
 
+import styles from './style.module.css'
+
 interface EducationItemProps { institution: string, specialization: string, endDate: string | undefined }
 
 export function Education({ education }: { education: EducationProps }) {
@@ -12,8 +14,8 @@ export function Education({ education }: { education: EducationProps }) {
     <div className="education">
       <Title title="Образование" />
       <List>
-        <ListItem className="education__group" hideMark>
-          <h3 className="education__title">Высшее образование</h3>
+        <ListItem className={styles.group} hideMark>
+          <h3 className={styles.title}>Высшее образование</h3>
           <List padding={10}>
             {education.higherEducation.map(({ institution, specialization, endDate }, index) => (
               <EducationItem key={index} institution={institution} specialization={specialization} endDate={endDate} />
@@ -21,8 +23,8 @@ export function Education({ education }: { education: EducationProps }) {
             ))}
           </List>
         </ListItem>
-        <ListItem className="education__group">
-          <h3 className="education__title">Дополнительное образование</h3>
+        <ListItem className={styles.group}>
+          <h3 className={styles.title}>Дополнительное образование</h3>
           <List padding={10}>
             {education.courses.map(({ institution, specialization, endDate }, index) => (
               <EducationItem key={index} institution={institution} specialization={specialization} endDate={endDate} />

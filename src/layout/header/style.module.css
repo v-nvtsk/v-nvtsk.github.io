@@ -1,0 +1,60 @@
+.header {
+  background-color: white;
+  border-bottom: 2px solid black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu {
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 100%;
+}
+
+.menuItem,
+.menuItemRight {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.menuItemRight {
+  margin-left: auto;
+}
+
+.menuLink {
+  place-self: center;
+}
+
+.pdfButton {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  /* button style design white with rounded border */
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.pdfButton:hover {
+  background-color: black;
+  color: white;
+}
+
+@media print {
+  .header {
+    display: none;
+  }
+}

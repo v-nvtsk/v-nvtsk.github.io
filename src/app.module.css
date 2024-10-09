@@ -7,3 +7,7 @@
   grid-template-columns: 30% 70%;
   justify-content: center;
 }
+
+.whiteSpace {
+  height: 60px;
+}
