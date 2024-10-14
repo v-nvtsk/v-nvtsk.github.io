@@ -1,173 +1,236 @@
 {
   "personal": {
-    "data": {
-      "name": "Novitskiy Vladislav",
-      "post": "JS Developer",
-      "photoURL": "photo.webp"
-    }
+    "name": "Новицкий Владислав",
+    "post": "frontend-разработчик/фронтенд-разработчик",
+    "photoURL": "photo.webp"
   },
-  "experience": [
-    {
-      "mostRecent": true,
-      "dates": "Jun.2024 - Present",
-      "postTitle": "Intern-Engineer",
-      "postDescription": "Frontend developer",
-      "responsibilities": [
-        "Plan, estimate and develop tasks",
-        "Refactor and optimize code",
-        "Participate in code reviews within the team",
-        "Interact with other teams"
-      ]
-    },
-    {
-      "mostRecent": false,
-      "dates": "2009 - 2024",
-      "postTitle": "Civil Engineer",
-      "postDescription": "Civil engineering quality control",
-      "responsibilities": [
-        "Control over the execution of construction and installation works, acceptance of completed construction projects",
-        "Control over the implementation of the capital construction plan",
-        "Control over the compliance of the volume of work, deadlines and quality of construction and materials used"
-      ]
-    },
-    {
-      "mostRecent": false,
-      "dates": "2006 - 2009",
-      "postTitle": "Hydraulic engineer",
-      "postDescription": "Workshop foreman",
-      "responsibilities": [
-        "Control over the execution of production works, acceptance of completed construction projects",
-        "Submission of work to the controllers of the control department"
-      ]
-    }
-  ],
-  "tools": {
-    "languages": [],
-    "libraries": [],
-    "other": []
+  "about": {
+    "text": [
+      "Я начинающий фронтенд разработчик.",
+      "15 лет работал в строительстве инженером строительного контроля. Более 20 лет опыт любительского программирования. Всегда применял имеющиеся навыки программирования в работе: автоматизация отчётов и пр.",
+      "Три года назад начал изучать фронтенд, применяя js и html в работе с google документами, а в 2024 году решил сменить профессию.",
+      "С июня 2023г. обучаюсь по специализации fullstack-разработчик в “OTUS - онлайн образование”. Закончил курсы “JS-basic” и “HTML/CSS” специализации, сейчас прохожу завершающий курс “JS-professional”.",
+      "C апреля 2024г. студент образовательного проекта Сбера - “Школы 21”."
+    ]
   },
-  "education": [
+  "skills": [
     {
-      "favourite": true,
-      "dates": "2024 - Present",
-      "title": "Student",
-      "tags": [
-        "C-lang",
-        "check-lib",
-        "debugging",
-        "team-work"
-      ],
-      "organization": "School-21 educational project of Sber"
+      "title": "Основной стек",
+      "list": [
+        "Typescript",
+        "Javascript",
+        "HTML/CSS"
+      ]
     },
     {
-      "favourite": false,
-      "dates": "2023 - 2024",
-      "title": "Frontend developer",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript",
+      "title": "Фреймворки, технологии",
+      "list": [
         "React",
         "Redux",
-        "jest",
-        "redux-toolkit",
-        "react-testing-library",
-        "playwright"
-      ],
-      "organization": ""
+        "Jest",
+        "React-testing-library",
+        "Playwright",
+        "Next.js"
+      ]
     },
     {
-      "favourite": false,
-      "dates": "2009",
-      "title": "Civil engineer",
-      "tags": [
-        "construction",
-        "engineering",
-        "architecture",
-        "services"
-      ],
-      "organization": "Karaganda State University"
+      "title": "Дополнительные языки",
+      "list": [
+        "VB, VBA",
+        "bash",
+        "Си",
+        "MASM32"
+      ]
     },
     {
-      "favourite": false,
-      "dates": "2006",
-      "title": "Hydraulic machines and automatic engineer",
-      "tags": [
-        "automation",
-        "engineering",
-        "mechanics",
-        "machines"
-      ],
-      "organization": "Karaganda State University"
-    }
-  ],
-  "interests": [
-    {
-      "name": "webdev"
+      "title": "Работа с БД",
+      "list": [
+        "firebase",
+        "mongodb"
+      ]
     },
     {
-      "name": "frameworks"
-    },
-    {
-      "name": "communication"
-    },
-    {
-      "name": "time-management"
-    },
-    {
-      "name": "problem-solving"
-    },
-    {
-      "name": "teamwork"
-    },
-    {
-      "name": "leadership"
-    },
-    {
-      "name": "technical writing"
-    },
-    {
-      "name": "design"
-    },
-    {
-      "name": "photography"
-    },
-    {
-      "name": "artificial intelligence"
-    },
-    {
-      "name": "illustration"
-    },
-    {
-      "name": "typography"
-    },
-    {
-      "name": "social networks"
-    },
-    {
-      "name": "research"
+      "title": "Инструменты разработки",
+      "list": [
+        "Git",
+        "Webpack",
+        "NPM",
+        "Husky",
+        "ESLint",
+        "Prettier",
+        "Figma",
+        "GitHub, GitLab, BitBucket",
+        "VSCode",
+        "Postman",
+        "Jira"
+      ]
     }
   ],
   "languages": [
     {
-      "name": "Russian",
-      "mark": 10
-    },
-    {
       "name": "English",
+      "grade": "B2 Upper Intermediate",
       "mark": 8
-    },
-    {
-      "name": "Italian",
-      "mark": 2
     }
   ],
   "contacts": {
-    "message": {
-      "text": "Let´s chat! I´m ready to work on exciting projects"
+    "phone": "+79038117314",
+    "email": "vladislav@nvtsk.ru",
+    "github": "v-nvtsk",
+    "telegram": "no_vlad",
+    "city": "Москва"
+  },
+  "education": {
+    "higherEducation": [
+      {
+        "institution": "Карагандинский Государственный Технический Университет",
+        "specialization": "Строительство, бакалавр",
+        "city": "Караганда",
+        "endDate": "2009"
+      },
+      {
+        "institution": "Карагандинский Государственный Технический Университет",
+        "specialization": "Гидравлические машины, гидроприводы и гидропневмоавтоматика, инженер",
+        "city": "Караганда",
+        "endDate": "2006"
+      }
+    ],
+    "courses": [
+      {
+        "institution": "Школа 21-образовательный проект от Сбер для разработчиков",
+        "specialization": "Основное обучение",
+        "startDate": "2024",
+        "endDate": "2024 - н.в"
+      },
+      {
+        "institution": "Отус-онлайн образование",
+        "specialization": "JS-professional",
+        "startDate": "2024",
+        "endDate": "2024 - н.в"
+      },
+      {
+        "institution": "Отус-онлайн образование",
+        "specialization": "JS-basic",
+        "startDate": "2024",
+        "endDate": "2024"
+      },
+      {
+        "institution": "Отус-онлайн образование",
+        "specialization": "HTML/CSS",
+        "startDate": "2023",
+        "endDate": "2023"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Календарь событий",
+      "stack": [
+        "react",
+        "typescript",
+        "redux/toolkit",
+        "react-router",
+        "firebase",
+        "jest",
+        "react-testing-library",
+        "playwright"
+      ],
+      "link": "https://github.com/v-nvtsk/otus-jsbasic-calendar",
+      "description": "Проект для учёта событий, задач. Поддерживает авторизацию пользователей по email и паролю."
     },
-    "mail": {
-      "text": "vladislav@nvtsk.ru"
+    {
+      "title": "Учет расходов",
+      "stack": [
+        "react",
+        "typescript",
+        "redux/toolkit",
+        "react-router",
+        "firebase",
+        "jest",
+        "react-testing-library"
+      ],
+      "link": "https://github.com/v-nvtsk/expenses-app",
+      "description": "Проект для учёта расходов. Позволяет добавлять расходы и отображать статистику с разбивкой по категориям."
+    },
+    {
+      "title": "Life game",
+      "stack": [
+        "html",
+        "css",
+        "canvas",
+        "typescript",
+        "jest"
+      ],
+      "link": "https://github.com/v-nvtsk/life-game",
+      "description": "Игра, в которой человек создаёт начальное состояние, а потом лишь наблюдает за её развитием."
+    },
+    {
+      "title": "Covid landing",
+      "stack": [
+        "html",
+        "css",
+        "javascript",
+        "webpack"
+      ],
+      "link": "https://github.com/v-nvtsk/covid-landing",
+      "description": "Лэндинг с адаптивным интерфейсом. Вёрстка по шаблону figma"
+    },
+    {
+      "title": "Mod studio",
+      "stack": [
+        "html",
+        "css",
+        "javascript",
+        "webpack"
+      ],
+      "link": "https://github.com/v-nvtsk/mod-studio",
+      "description": "Проектная работа по курсу HTML/CSS. Лэндинг с адаптивным интерфейсом. Вёрстка по шаблону figma"
+    },
+    {
+      "title": "Клиентский роутер",
+      "stack": [
+        "typescript",
+        "jest"
+      ],
+      "link": "https://github.com/v-nvtsk/npm-package-routelib",
+      "description": "Проект библиотеки для управления навигацией на стороне клиента. Поддерживает хэш и history-API роутинг."
+    },
+    {
+      "title": "Github-pages deploy",
+      "stack": [
+        "typescript",
+        "jest"
+      ],
+      "link": "https://github.com/v-nvtsk/otus-jsbasic-deploy-gh",
+      "description": "NPM пакет для публикации сборки в github-pages. Предоставляет интерактивный выбор параметров, либо через аргументы CLI."
     }
-  }
+  ],
+  "experience": [
+    {
+      "mostRecent": true,
+      "startDate": "06.2024",
+      "post": "Стажер-инженер javascript",
+      "organization": "ПАО \"Сбербанк России\"",
+      "postDescription": "Разработка React-приложения на основе архитектуры feature-sliced design с использованием микрофронтендов.",
+      "responsibilities": [
+        "Добавил новые правила в конфигурацию ESLint, повысив качество кода и улучшив его читаемость и поддерживаемость",
+        "Увеличил покрытие кода тестами с 40% до 60%, что способствовало более быстрому выявлению ошибок в проекте",
+        "Оптимизировал и доработал внутренние библиотеки проекта, улучшив их функциональность и упростив процесс дальнейшей разработки",
+        "Работал над автоматизацией документации в Confluence, упростив процессы ведения и обновления документации"
+      ]
+    },
+    {
+      "organization": "Строительство",
+      "startDate": "2009",
+      "endDate": "2024",
+      "mostRecent": false,
+      "post": "Инженер строительного контроля",
+      "postDescription": "Контроль качества строительных работ",
+      "responsibilities": [
+        "Проведение проверок согласно нормативно-технических документов",
+        "Контроль соблюдения проектной документации",
+        "Составление регламентов, планов и отчётов"
+      ]
+    }
+  ]
 }
