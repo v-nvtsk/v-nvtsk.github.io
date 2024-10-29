@@ -1,5 +1,7 @@
 import { PropsWithChildren, useState } from 'react'
 import styles from './style.module.css'
+import { useSelector } from 'react-redux'
+import { appSelector } from '@/store/selectors/appSelector'
 
 interface ListProps extends PropsWithChildren {
   listStyle?: string
@@ -8,6 +10,7 @@ interface ListProps extends PropsWithChildren {
 }
 
 export function List({ children, listStyle, padding = 0, editable = true }: ListProps) {
+  const { editMode } = useSelector(appSelector)
   const [hover, setHover] = useState('')
   const style: Record<string, string> | null = {
     listStyleType: listStyle ?? 'none',
@@ -16,7 +19,7 @@ export function List({ children, listStyle, padding = 0, editable = true }: List
 
   const hoverHandler = (ev: React.MouseEvent) => {
     ev.stopPropagation()
-    setHover(styles.hovered)
+    if (editMode)setHover(styles.hovered)
   }
 
   return (

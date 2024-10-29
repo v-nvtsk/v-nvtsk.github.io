@@ -1,5 +1,7 @@
 import { PropsWithChildren, useState } from 'react'
 import styles from './style.module.css'
+import { useSelector } from 'react-redux'
+import { appSelector } from '@/store/selectors/appSelector'
 
 interface ListItemProps extends PropsWithChildren {
   className?: string
@@ -7,13 +9,14 @@ interface ListItemProps extends PropsWithChildren {
 }
 
 export function ListItem({ className, children, hideMark }: ListItemProps) {
+  const { editMode } = useSelector(appSelector)
   const [hover, setHover] = useState('')
 
   const markStyle = hideMark ? '' : styles.markedItem
 
   const hoverHandler = (ev: React.MouseEvent) => {
     ev.stopPropagation()
-    setHover(styles.hovered)
+    if (editMode)setHover(styles.hovered)
   }
 
   return (
