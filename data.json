@@ -135,7 +135,7 @@
         "react-testing-library",
         "playwright"
       ],
-      "link": "https://github.com/v-nvtsk/otus-jsbasic-calendar",
+      "link": "https://github.com/v-nvtsk/calendar",
       "description": "Проект для учёта событий, задач. Поддерживает авторизацию пользователей по email и паролю."
     },
     {
@@ -201,7 +201,7 @@
         "typescript",
         "jest"
       ],
-      "link": "https://github.com/v-nvtsk/otus-jsbasic-deploy-gh",
+      "link": "https://github.com/v-nvtsk/nvtsk-deploy-gh",
       "description": "NPM пакет для публикации сборки в github-pages. Предоставляет интерактивный выбор параметров, либо через аргументы CLI."
     }
   ],
