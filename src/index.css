@@ -21,7 +21,12 @@
 
 body {
   --blocks-gap: var(--blocks-gap-standard);
-  font-family: "Open Sans Condensed", system-ui;
+  /* font-family: "Open Sans Condensed", system-ui; */
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   line-height: 150%;
 }
 

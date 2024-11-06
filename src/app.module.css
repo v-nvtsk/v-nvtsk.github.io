@@ -11,3 +11,9 @@
 .whiteSpace {
   height: 60px;
 }
+
+@media (max-width: 768px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+}

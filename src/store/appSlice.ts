@@ -12,9 +12,10 @@ export const appSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    changeMode: (state: AppState) => {
-      const searchparams = new URLSearchParams(window.location.search)
-      state.editMode = (searchparams.get('edit') === 'true')
+    setEditMode: (state: AppState, { payload }: { payload: boolean }) => {
+      state.editMode = payload
     },
   },
 })
+
+export const { setEditMode } = appSlice.actions

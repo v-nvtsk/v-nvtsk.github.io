@@ -16,10 +16,15 @@ import { CVData } from './types'
 import styles from './app.module.css'
 import { Header } from './layout/header'
 import { saveToPdf } from './service/save-pdf'
+import { useDispatch } from 'react-redux'
+import { setEditMode } from './store/appSlice'
 
 function App() {
+  const dispatch = useDispatch()
   const [data, setData] = useState<CVData | null>(null)
   const [isQrVisible, setIsQrVisible] = useState(false)
+  const searchParams = new URLSearchParams(window.location.search)
+  const editMode = searchParams.has('edit')
 
   const savePdfHandler = useCallback((ev: React.MouseEvent) => {
     ev.preventDefault()
@@ -30,6 +35,10 @@ function App() {
   useEffect(() => {
     fetchJSON().then(setData).catch(console.error)
   }, [])
+
+  useEffect(() => {
+    dispatch (setEditMode(editMode))
+  }, [editMode])
 
   if (isVoid(data)) return <p>Loading...</p>
 
