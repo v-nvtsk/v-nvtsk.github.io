@@ -1,12 +1,35 @@
 @font-face {
-  font-family: "Open Sans Condensed";
-  src: url("/fonts/OpenSansCondensed-Light.ttf") format("truetype");
+  font-family: "PTSans-Regular";
+  src: url("/fonts/PTSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("/fonts/PTSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("/fonts/PTSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("/fonts/PTSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 
 :root {
   --main-background-color: #ffffff;
   --main-text-color: #3f3f3f;
-  --sidebar-background-color: #4e5a72;
+  --sidebar-background-color: #3e6e3e;
   --sidebar-text-color: #ffffff;
 
   --blocks-gap-standard: 20px;
@@ -21,7 +44,7 @@
 
 body {
   --blocks-gap: var(--blocks-gap-standard);
-  font-family: "Open Sans Condensed", system-ui;
+  font-family: "PT Sans", sans-serif;
 
   font-optical-sizing: auto;
   font-weight: 400;

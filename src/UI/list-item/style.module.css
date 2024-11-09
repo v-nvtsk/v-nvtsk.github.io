@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.inlineBlock {
+  display: inline-block;
+}
+
 .markedItem {
   position: relative;
 }

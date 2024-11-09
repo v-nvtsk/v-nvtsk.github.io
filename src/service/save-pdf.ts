@@ -1,32 +1,35 @@
-import { jsPDF, jsPDFOptions } from 'jspdf'
+import html2pdf from 'html2pdf.js'
 
 export async function saveToPdf() {
-  console.log('saveToPdf: ')
-  const element = document.querySelector('#page') as HTMLElement
+  const element = document.querySelector('#page')
   if (element === null) return
 
   const rect = element.getBoundingClientRect()
 
-  const portrait = rect.width < rect.height
-  const jsPDFOptions: jsPDFOptions = {
-    orientation: portrait ? 'p' : 'l',
-    unit: 'px',
-    format: [rect.height, rect.width],
-    compress: true,
-    hotfixes: ['px_scaling'],
+  // Определяем нужные параметры для сохранения
+  const options = {
+    margin: 1,
+    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+    enableLinks: true,
+    filename: 'cv.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: {
+      scale: 3,
+      useCORS: true,
+    },
+    jsPDF: {
+      unit: 'px',
+      format: [rect.width, rect.height],
+      orientation: 'portrait',
+      compress: true,
+      putOnlyUsedFonts: true,
+      hotfixes: ['px_scaling'],
+    },
   }
 
-  const doc = new jsPDF(jsPDFOptions)
-  doc.addFont('fonts/OpenSansCondensed-Light.ttf', 'Open Sans Condensed', 'normal')
-  doc.setFont('Open Sans Condensed')
-
-  await doc.html(element, {
-    callback: function (doc) {
-      doc.deletePage(1)
-      doc.save('cv.pdf')
-    },
-    autoPaging: false,
-    image: { type: 'jpeg', quality: 80 },
-    margin: 0,
-  })
+  // Генерируем PDF
+  await html2pdf()
+    .from(element)
+    .set(options)
+    .save('cv.pdf')
 }
