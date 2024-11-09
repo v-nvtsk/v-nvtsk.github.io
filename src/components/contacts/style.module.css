@@ -1,0 +1,38 @@
+.component {
+  line-height: 1.5;
+}
+
+.link {
+  color: var(--sidebar-text-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active,
+.link:focus,
+.link:visited {
+  color: var(--sidebar-text-color);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media print {
+  .component {
+    line-height: 1.5;
+  }
+
+  .link,
+  .link:active,
+  .link:focus,
+  .link:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+}

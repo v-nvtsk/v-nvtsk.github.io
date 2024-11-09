@@ -1,173 +1,236 @@
 {
   "personal": {
-    "data": {
-      "name": "Novitskiy Vladislav",
-      "post": "JS Developer",
-      "photoURL": "photo.webp"
-    }
+    "name": "Новицкий Владислав",
+    "post": "frontend-разработчик/фронтенд-разработчик",
+    "photoURL": "photo.webp"
   },
-  "experience": [
-    {
-      "mostRecent": true,
-      "dates": "Jun.2024 - Present",
-      "postTitle": "Intern-Engineer",
-      "postDescription": "Frontend developer",
-      "responsibilities": [
-        "Plan, estimate and develop tasks",
-        "Refactor and optimize code",
-        "Participate in code reviews within the team",
-        "Interact with other teams"
-      ]
-    },
-    {
-      "mostRecent": false,
-      "dates": "2009 - 2024",
-      "postTitle": "Civil Engineer",
-      "postDescription": "Civil engineering quality control",
-      "responsibilities": [
-        "Control over the execution of construction and installation works, acceptance of completed construction projects",
-        "Control over the implementation of the capital construction plan",
-        "Control over the compliance of the volume of work, deadlines and quality of construction and materials used"
-      ]
-    },
-    {
-      "mostRecent": false,
-      "dates": "2006 - 2009",
-      "postTitle": "Hydraulic engineer",
-      "postDescription": "Workshop foreman",
-      "responsibilities": [
-        "Control over the execution of production works, acceptance of completed construction projects",
-        "Submission of work to the controllers of the control department"
-      ]
-    }
-  ],
-  "tools": {
-    "languages": [],
-    "libraries": [],
-    "other": []
+  "about": {
+    "text": [
+      "Фронтенд-разработчик с опытом стажировки и проектной работы.",
+      "15 лет работал инженером строительного контроля, где применял свои навыки программирования для автоматизации отчетов и других рабочих задач. Более 20 лет занимаюсь программированием на уровне любителя.",
+      "В 2021 году начал изучать фронтенд-разработку и использовать JavaScript и HTML для автоматизации работы с Google Документами. В процессе работы также освоил React и Next.js, которые применял в проектах для автоматизации и работы с документацией. В 2024 году решил полностью сменить профессию.",
+      "Мои достижения на должности инженера строительного контроля позволяют мне эффективно анализировать данные, следовать строгим спецификациям и контролировать качество, что является важным для разработки надежных и функциональных приложений. Опыт в создании регламентов, планов и отчетов помогает мне систематизировать информацию и обеспечивать организацию работы в процессе разработки, что также важно для эффективного фронтенд-разработчика.",
+      "С июня 2023 года обучаюсь на fullstack-разработчика в OTUS. Закончил курсы 'JS-basic' и 'HTML/CSS', сейчас прохожу заключительный модуль 'JS-professional'.",
+      "С апреля 2024 года являюсь студентом образовательного проекта Сбера — “Школы 21”."
+    ]
   },
-  "education": [
+  "skills": [
     {
-      "favourite": true,
-      "dates": "2024 - Present",
-      "title": "Student",
-      "tags": [
-        "C-lang",
-        "check-lib",
-        "debugging",
-        "team-work"
-      ],
-      "organization": "School-21 educational project of Sber"
-    },
-    {
-      "favourite": false,
-      "dates": "2023 - 2024",
-      "title": "Frontend developer",
-      "tags": [
-        "HTML",
-        "CSS",
+      "title": "Основной стек",
+      "list": [
+        "TypeScript",
         "JavaScript",
+        "HTML/CSS",
         "React",
-        "Redux",
-        "jest",
-        "redux-toolkit",
-        "react-testing-library",
-        "playwright"
-      ],
-      "organization": ""
+        "Redux"
+      ]
     },
     {
-      "favourite": false,
-      "dates": "2009",
-      "title": "Civil engineer",
-      "tags": [
-        "construction",
-        "engineering",
-        "architecture",
-        "services"
-      ],
-      "organization": "Karaganda State University"
+      "title": "Тестирование и QA",
+      "list": [
+        "Jest",
+        "React Testing Library",
+        "Playwright"
+      ]
     },
     {
-      "favourite": false,
-      "dates": "2006",
-      "title": "Hydraulic machines and automatic engineer",
-      "tags": [
-        "automation",
-        "engineering",
-        "mechanics",
-        "machines"
-      ],
-      "organization": "Karaganda State University"
-    }
-  ],
-  "interests": [
-    {
-      "name": "webdev"
+      "title": "Фреймворки и технологии",
+      "list": [
+        "Next.js",
+        "Firebase",
+        "MongoDB"
+      ]
     },
     {
-      "name": "frameworks"
+      "title": "Инструменты и DevOps",
+      "list": [
+        "Git",
+        "Webpack",
+        "NPM",
+        "Husky",
+        "ESLint/Prettier",
+        "Figma",
+        "GitHub/GitLab/BitBucket",
+        "VSCode",
+        "Postman",
+        "Jira"
+      ]
     },
     {
-      "name": "communication"
-    },
-    {
-      "name": "time-management"
-    },
-    {
-      "name": "problem-solving"
-    },
-    {
-      "name": "teamwork"
-    },
-    {
-      "name": "leadership"
-    },
-    {
-      "name": "technical writing"
-    },
-    {
-      "name": "design"
-    },
-    {
-      "name": "photography"
-    },
-    {
-      "name": "artificial intelligence"
-    },
-    {
-      "name": "illustration"
-    },
-    {
-      "name": "typography"
-    },
-    {
-      "name": "social networks"
-    },
-    {
-      "name": "research"
+      "title": "Дополнительные языки",
+      "list": [
+        "VB/VBA",
+        "Bash",
+        "C",
+        "MASM32"
+      ]
     }
   ],
   "languages": [
     {
-      "name": "Russian",
-      "mark": 10
-    },
-    {
       "name": "English",
+      "grade": "B2 Upper Intermediate",
       "mark": 8
-    },
-    {
-      "name": "Italian",
-      "mark": 2
     }
   ],
   "contacts": {
-    "message": {
-      "text": "Let´s chat! I´m ready to work on exciting projects"
+    "phone": "+79038117314",
+    "email": "vladislav@nvtsk.ru",
+    "github": "v-nvtsk",
+    "telegram": "no_vlad",
+    "city": "Москва"
+  },
+  "education": {
+    "higherEducation": [
+      {
+        "institution": "Карагандинский Государственный Технический Университет",
+        "specialization": "Строительство, бакалавр",
+        "city": "Караганда",
+        "endDate": "2009"
+      },
+      {
+        "institution": "Карагандинский Государственный Технический Университет",
+        "specialization": "Гидравлические машины, гидроприводы и гидропневмоавтоматика, инженер",
+        "city": "Караганда",
+        "endDate": "2006"
+      }
+    ],
+    "courses": [
+      {
+        "institution": "Школа 21-образовательный проект от Сбер для разработчиков",
+        "specialization": "Основное обучение",
+        "startDate": "2024",
+        "endDate": "2024 - н.в"
+      },
+      {
+        "institution": "Отус-онлайн образование",
+        "specialization": "JS-professional",
+        "startDate": "2024",
+        "endDate": "2024 - н.в"
+      },
+      {
+        "institution": "Отус-онлайн образование",
+        "specialization": "JS-basic",
+        "startDate": "2024",
+        "endDate": "2024"
+      },
+      {
+        "institution": "Отус-онлайн образование",
+        "specialization": "HTML/CSS",
+        "startDate": "2023",
+        "endDate": "2023"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Календарь событий",
+      "stack": [
+        "react",
+        "typescript",
+        "redux/toolkit",
+        "react-router",
+        "firebase",
+        "jest",
+        "react-testing-library",
+        "playwright"
+      ],
+      "link": "https://github.com/v-nvtsk/calendar",
+      "description": "Проект для учёта событий, задач. Поддерживает авторизацию пользователей по email и паролю."
     },
-    "mail": {
-      "text": "vladislav@nvtsk.ru"
+    {
+      "title": "Учет расходов",
+      "stack": [
+        "react",
+        "typescript",
+        "redux/toolkit",
+        "react-router",
+        "firebase",
+        "jest",
+        "react-testing-library"
+      ],
+      "link": "https://github.com/v-nvtsk/expenses-app",
+      "description": "Проект для учёта расходов. Позволяет добавлять расходы и отображать статистику с разбивкой по категориям."
+    },
+    {
+      "title": "Life game",
+      "stack": [
+        "html",
+        "css",
+        "canvas",
+        "typescript",
+        "jest"
+      ],
+      "link": "https://github.com/v-nvtsk/life-game",
+      "description": "Игра, в которой человек создаёт начальное состояние, а потом лишь наблюдает за её развитием."
+    },
+    {
+      "title": "Covid landing",
+      "stack": [
+        "html",
+        "css",
+        "javascript",
+        "webpack"
+      ],
+      "link": "https://github.com/v-nvtsk/covid-landing",
+      "description": "Лэндинг с адаптивным интерфейсом. Вёрстка по шаблону figma"
+    },
+    {
+      "title": "Mod studio",
+      "stack": [
+        "html",
+        "css",
+        "javascript",
+        "webpack"
+      ],
+      "link": "https://github.com/v-nvtsk/mod-studio",
+      "description": "Проектная работа по курсу HTML/CSS. Лэндинг с адаптивным интерфейсом. Вёрстка по шаблону figma"
+    },
+    {
+      "title": "Клиентский роутер",
+      "stack": [
+        "typescript",
+        "jest"
+      ],
+      "link": "https://github.com/v-nvtsk/npm-package-routelib",
+      "description": "Проект библиотеки для управления навигацией на стороне клиента. Поддерживает хэш и history-API роутинг."
+    },
+    {
+      "title": "Github-pages deploy",
+      "stack": [
+        "typescript",
+        "jest"
+      ],
+      "link": "https://github.com/v-nvtsk/nvtsk-deploy-gh",
+      "description": "NPM пакет для публикации сборки в github-pages. Предоставляет интерактивный выбор параметров, либо через аргументы CLI."
     }
-  }
+  ],
+  "experience": [
+    {
+      "mostRecent": true,
+      "startDate": "06.2024",
+      "post": "Стажер-инженер javascript",
+      "organization": "ПАО \"Сбербанк России\"",
+      "postDescription": "Работа с существующим React-приложением, улучшение его функциональности и качества в рамках архитектуры feature-sliced design.",
+      "responsibilities": [
+        "Настроил новые правила для ESLint, что улучшило качество кода, повысило читаемость и упростило поддержку кода в долгосрочной перспективе",
+        "Увеличил покрытие кода тестами с 40% до 60%, что помогло ускорить выявление ошибок и повысить стабильность приложения",
+        "Оптимизировал и доработал внутренние библиотеки проекта, улучшив функциональность, что ускорило процесс разработки и повысило эффективность команды",
+        "Автоматизировал создание документации в Confluence, упрощая ведение и актуализацию, что позволило сократить время на обновление и улучшить доступность информации для команды"
+      ]
+    },
+    {
+      "organization": "Строительство",
+      "startDate": "2009",
+      "endDate": "2024",
+      "mostRecent": false,
+      "post": "Инженер строительного контроля",
+      "postDescription": "Контроль качества строительных работ",
+      "responsibilities": [
+        "Проведение проверок согласно нормативно-технических документов",
+        "Контроль соблюдения проектной документации",
+        "Составление регламентов, планов и отчётов"
+      ]
+    }
+  ]
 }

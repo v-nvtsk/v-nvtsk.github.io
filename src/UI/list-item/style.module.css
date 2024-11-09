@@ -1,0 +1,42 @@
+.listItem {
+  position: relative;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.markedItem {
+  position: relative;
+}
+
+.markedItem::before {
+  position: absolute;
+  top: 0;
+  left: -1ch;
+  content: "-";
+}
+
+.removeBtnWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  padding: 5px;
+  display: flex;
+}
+
+.removeBtn {
+  width: 20px;
+  aspect-ratio: 1 / 1;
+  align-content: center;
+  color: red;
+}
+
+.listItem.hovered {
+  box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.2);
+}
+
+.listItem.hovered > .removeBtnWrapper {
+  opacity: 1;
+}
