@@ -11,7 +11,8 @@
     "lint": "eslint --fix",
     "format": "prettier --write",
     "style": "stylelint --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "tsc": "tsc --noEmit"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

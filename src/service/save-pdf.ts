@@ -1,3 +1,4 @@
+// @ts-expect-error no ts-declaration in package
 import html2pdf from 'html2pdf.js'
 
 export async function saveToPdf() {
