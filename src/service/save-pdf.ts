@@ -4,9 +4,6 @@ export async function saveToPdf() {
   const element = document.querySelector('#page')
   if (element === null) return
 
-  const rect = element.getBoundingClientRect()
-
-  // Определяем нужные параметры для сохранения
   const options = {
     margin: 1,
     pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
@@ -19,7 +16,7 @@ export async function saveToPdf() {
     },
     jsPDF: {
       unit: 'px',
-      format: [rect.width, rect.height],
+      format: 'a4',
       orientation: 'portrait',
       compress: true,
       putOnlyUsedFonts: true,
