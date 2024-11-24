@@ -1,4 +1,7 @@
 .personBlock {
+  padding: 20px;
+
+  grid-area: person;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: "info qr";

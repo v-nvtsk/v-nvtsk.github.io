@@ -6,6 +6,10 @@
   display: grid;
   grid-template-columns: 30% 70%;
   justify-content: center;
+
+  grid-template-areas:
+    "sidebar person"
+    "sidebar main";
 }
 
 .whiteSpace {
@@ -15,5 +19,9 @@
 @media (max-width: 576px) {
   .page {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "person"
+      "sidebar"
+      "main";
   }
 }

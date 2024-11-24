@@ -23,7 +23,7 @@
   justify-content: space-between;
 }
 
-@media print {
+@media print, (max-width: 576px) {
   .component {
     line-height: 1.5;
   }
