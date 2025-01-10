@@ -1,33 +1,32 @@
-// @ts-expect-error no ts-declaration in package
-import html2pdf from 'html2pdf.js'
+import { jsPDF, jsPDFOptions } from 'jspdf'
 
 export async function saveToPdf() {
-  const element = document.querySelector('#page')
-  if (element === null) return
+  const element = document.querySelector('#page') as HTMLElement
+  if (element == null) return
 
-  const options = {
-    margin: 1,
-    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
-    enableLinks: true,
-    filename: 'cv.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: {
-      scale: 3,
-      useCORS: true,
-    },
-    jsPDF: {
-      unit: 'px',
-      format: 'a4',
-      orientation: 'portrait',
-      compress: true,
-      putOnlyUsedFonts: true,
-      hotfixes: ['px_scaling'],
-    },
+  const rect = element.getBoundingClientRect()
+  const portrait = rect.width < rect.height
+
+  const pdfOptions: jsPDFOptions = {
+    unit: 'px',
+    format: [rect.height, rect.width],
+    orientation: portrait ? 'portrait' : 'landscape',
+    compress: true,
+    putOnlyUsedFonts: true,
+    hotfixes: ['px_scaling'],
+
   }
+  const doc = new jsPDF(pdfOptions)
 
-  // Генерируем PDF
-  await html2pdf()
-    .from(element)
-    .set(options)
-    .save('cv.pdf')
+  doc.addFont('fonts/PTSans-Regular.ttf', 'PT Sans', 'normal')
+  doc.setFont('PT Sans')
+  await doc.html(element, {
+    callback: function (doc) {
+      doc.deletePage(1)
+      doc.save('cv.pdf')
+    },
+    autoPaging: false,
+    image: { type: 'jpeg', quality: 1 },
+    margin: 0,
+  })
 }
