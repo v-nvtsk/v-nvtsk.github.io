@@ -1,10 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { CVData } from '../../types'
-import { fetchJSON } from '../../service/fetch-json'
 
-export type CVState = CVData
+export interface CVState extends CVData {
+  isLoading: boolean
+}
 
-const initialState: CVState = await fetchJSON() as CVState
+const initialState: CVState = {
+  isLoading: true,
+} as CVState
 
 export const cvSlice = createSlice({
   name: 'cv',

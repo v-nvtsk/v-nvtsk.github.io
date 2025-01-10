@@ -16,6 +16,8 @@ import { saveToPdf } from './service/save-pdf'
 import { useDispatch, useSelector } from 'react-redux'
 import { setEditMode } from './store/slices/appSlice'
 import { cvSelector } from './store/selectors/cvSelector'
+import { CVState, updateData } from './store/slices/cv-data.slice'
+import { fetchJSON } from './service/fetch-json'
 
 function App() {
   const dispatch = useDispatch()
@@ -31,6 +33,14 @@ function App() {
   }, [])
 
   useEffect(() => {
+    async function temporaryInitState(): Promise<CVState> {
+      return await fetchJSON() as CVState
+    }
+
+    temporaryInitState()
+      .then((res) => {
+        dispatch(updateData({ ...res, isLoading: false }))
+      })
     dispatch (setEditMode(editMode))
   }, [editMode])
 
@@ -41,8 +51,8 @@ function App() {
       <Header savePdf={savePdfHandler} />
       <div className={styles.whiteSpace} />
       <div className={styles.container}>
-        {!data && <p>Loading...</p>}
-        {data && (
+        {data.isLoading && <p>Loading...</p>}
+        {!data.isLoading && (
           <div className={styles.page} id="page">
             <Sidebar>
               <Photo />
