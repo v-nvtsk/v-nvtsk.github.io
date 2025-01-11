@@ -29,8 +29,13 @@ function App() {
   const savePdfHandler = useCallback((ev: React.MouseEvent) => {
     ev.preventDefault()
     setIsQrVisible(true)
-    saveToPdf().then(() => setIsQrVisible(false))
   }, [])
+
+  useEffect(() => {
+    if (isQrVisible) {
+      saveToPdf().then(() => setIsQrVisible(false))
+    }
+  }, [isQrVisible])
 
   useEffect(() => {
     async function temporaryInitState(): Promise<CVState> {
