@@ -11,15 +11,15 @@ export function Experience({ experience }: Props) {
 
   return (
     <section className="experience">
-      <Title title="Опыт работы" />
+      <Title title="Опыт разработки" />
       <List listStyle="none">
         {experience.map((item, index) => (
           <ListItem key={index} hideMark>
             <div className={styles.titleGroup}>
               <h3>{item.organization}</h3>
-              <p className="item__date">{dates(item)}</p>
+              <h3 className="item__title">{item.post}</h3>
+              <h3 className="item__date">{dates(item)}</h3>
             </div>
-            <p className="item__title">{item.post}</p>
             {item.postDescription && <p className="item__description">{item.postDescription}</p>}
             <h4 className={styles.subtitle}>Функции / Достижения:</h4>
             <List padding={10}>

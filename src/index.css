@@ -40,11 +40,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
 }
 
 body {
   --blocks-gap: var(--blocks-gap-standard);
-  font-family: "PT Sans", sans-serif;
 
   font-optical-sizing: auto;
   font-weight: 400;
@@ -52,21 +52,15 @@ body {
   line-height: 150%;
 }
 
-body,
 h3,
 h4 {
-  font-size: 14px;
-}
-
-ul {
-  padding: 0;
+  font-size: 1rem;
 }
 
 @media (width > 1200px) {
-  body,
   h3,
   h4 {
-    font-size: 20px;
+    font-size: 1rem;
   }
 }
 
