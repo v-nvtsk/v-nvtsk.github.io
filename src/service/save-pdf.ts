@@ -19,6 +19,7 @@ export async function saveToPdf() {
   const doc = new jsPDF(pdfOptions)
 
   doc.addFont('fonts/PTSans-Regular.ttf', 'PT Sans', 'normal')
+  doc.addFont('fonts/PTSans-Bold.ttf', 'PT Sans', 'bold')
   doc.setFont('PT Sans')
   await doc.html(element, {
     callback: function (doc) {
