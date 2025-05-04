@@ -4,6 +4,8 @@ export async function saveToPdf() {
   const element = document.querySelector('#page') as HTMLElement
   if (element == null) return
 
+  await replaceSvgImagesWithPngs(element)
+
   const rect = element.getBoundingClientRect()
   const portrait = rect.width < rect.height
 
@@ -30,4 +32,35 @@ export async function saveToPdf() {
     image: { type: 'jpeg', quality: 1 },
     margin: 0,
   })
+}
+
+function svgTextToBase64Url(svgText: string): string {
+  const base64 = btoa(unescape(encodeURIComponent(svgText)))
+  return `data:image/svg+xml;base64,${base64}`
+}
+
+async function replaceSvgImagesWithPngs(container: HTMLElement) {
+  const svgImgs = container.querySelectorAll<HTMLImageElement>('img[src$=".svg"]')
+
+  for (const img of svgImgs) {
+    const response = await fetch(img.src)
+    const svgText = await response.text()
+    const svgUrl = svgTextToBase64Url(svgText)
+
+    const image = new Image()
+    image.src = svgUrl
+
+    await new Promise((resolve) => {
+      image.onload = resolve
+    })
+
+    const canvas = document.createElement('canvas')
+    canvas.width = img.width || image.width
+    canvas.height = img.height || image.height
+
+    const ctx = canvas.getContext('2d')
+    ctx?.drawImage(image, 0, 0)
+
+    img.src = canvas.toDataURL('image/png')
+  }
 }

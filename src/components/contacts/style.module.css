@@ -1,5 +1,8 @@
-.component {
-  line-height: 1.5;
+.contactsItemWrapper {
+  display: grid;
+  grid-template-columns: 24px auto;
+
+  gap: 5px;
 }
 
 .link {
@@ -24,10 +27,6 @@
 }
 
 @media print, (max-width: 576px) {
-  .component {
-    line-height: 1.5;
-  }
-
   .link,
   .link:active,
   .link:focus,
