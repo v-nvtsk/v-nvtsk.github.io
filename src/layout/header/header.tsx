@@ -27,7 +27,7 @@ export function Header({ savePdf }: { savePdf: (ev: React.MouseEvent) => void })
             className={styles.pdfButton}
             onClick={savePdf}
           >
-            PDF download
+            PDF generate
           </button>
         </li>
       </ul>
