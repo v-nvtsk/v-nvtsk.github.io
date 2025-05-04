@@ -29,11 +29,11 @@
 :root {
   --main-background-color: #ffffff;
   --main-text-color: #3f3f3f;
-  --sidebar-background-color: #3e6e3e;
+  --sidebar-background-color: #1561ad;
   --sidebar-text-color: #ffffff;
 
   --blocks-gap-standard: 20px;
-  --blocks-gap-print: 100px;
+  --blocks-gap-print: 10pt;
 }
 
 * {
@@ -54,13 +54,13 @@ body {
 
 h3,
 h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 @media (width > 1200px) {
   h3,
   h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -81,14 +81,14 @@ h4 {
   body,
   h3,
   h4 {
-    font-size: 10pt;
-  }
-
-  h2 {
     font-size: 12pt;
   }
 
-  h1 {
+  h2 {
     font-size: 14pt;
+  }
+
+  h1 {
+    font-size: 16pt;
   }
 }

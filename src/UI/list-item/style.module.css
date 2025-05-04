@@ -10,11 +10,16 @@
   position: relative;
 }
 
-.markedItem::before {
+.markedItem::after {
   position: absolute;
-  top: 0;
+  top: 1ch;
   left: -1ch;
-  content: "-";
+  content: "";
+  height: 0.5ch;
+  width: 0.5ch;
+  border-radius: 100%;
+  background-color: var(--sidebar-background-color);
+  filter: invert(100%);
 }
 
 .removeBtnWrapper {
