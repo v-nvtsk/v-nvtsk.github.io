@@ -35,7 +35,7 @@ export async function saveToPdf() {
 }
 
 function svgTextToBase64Url(svgText: string): string {
-  const base64 = btoa(unescape(encodeURIComponent(svgText)))
+  const base64 = btoa(svgText)
   return `data:image/svg+xml;base64,${base64}`
 }
 
