@@ -28,7 +28,7 @@ export function Education({ education }: { education: EducationProps }) {
             ))}
           </List>
         </ListItem>
-        <ListItem className={styles.group}>
+        <ListItem className={styles.group} hideMark>
           <h3 className={styles.title}>Дополнительное образование</h3>
           <List padding={10}>
             {education.courses.map(({ institution, specialization, startDate, endDate }, index) => (

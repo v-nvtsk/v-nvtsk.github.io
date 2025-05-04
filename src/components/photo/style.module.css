@@ -1,22 +1,26 @@
 .sectionWrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  place-content: center;
 }
 
 .imageWrapper {
   border-radius: 100%;
   overflow: hidden;
   aspect-ratio: 1 / 1;
-  width: minmax(123px, 100%);
+  width: 150px;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #e0ffff;
+}
+
+.circleWrapper {
+  border-radius: 100%;
 }
 
 .image {
-  width: 100%;
+  width: 150px;
   transition: transform 0.5s;
 }
 

@@ -1,0 +1,12 @@
+.about {
+  padding: 20px;
+  border: 1px solid var(--sidebar-background-color);
+  border-radius: 10px;
+}
+
+.floatTitle {
+  position: absolute;
+  background: var(--main-background-color);
+  padding: 0 10px;
+  margin-top: calc(-20px - 0.7rem);
+}

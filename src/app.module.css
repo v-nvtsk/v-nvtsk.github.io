@@ -11,12 +11,28 @@
 
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 30% 70%;
-  justify-content: center;
+  grid-template-columns: 20% auto;
+  justify-content: start;
+  align-items: start;
 
   grid-template-areas:
     "sidebar person"
     "sidebar main";
+
+  grid-template-rows: minmax(170px, auto) minmax(auto, 100%);
+  background: #0f477f;
+
+  gap: 0;
+}
+
+.pageGradient {
+  background: #0f477f;
+  background: linear-gradient(
+    112deg,
+    rgba(15, 71, 127, 1) 0%,
+    rgba(21, 97, 173, 1) 35%,
+    rgba(201, 224, 248, 1) 100%
+  );
 }
 
 .whiteSpace {
@@ -30,5 +46,16 @@
       "person"
       "sidebar"
       "main";
+  }
+}
+
+@media print {
+  .whiteSpace {
+    display: none;
+  }
+
+  .page {
+    min-height: fit-content;
+    max-height: 250mm;
   }
 }
