@@ -1,20 +1,41 @@
 .personBlock {
-  padding: 20px;
-  padding-bottom: 0;
-
   grid-area: person;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.personWrapper {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: "info qr";
+  grid-template-rows: 100%;
   justify-content: space-between;
   align-content: space-between;
+  color: var(--sidebar-text-color);
+  border-radius: 0 0 10px 0;
 }
 
 .info {
+  height: 100%;
   grid-area: info;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
+}
+
+.personName {
+  font-size: 2rem;
+}
+
+.personPosition {
+  font-size: 1rem;
 }
 
 .qr {

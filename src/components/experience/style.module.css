@@ -7,3 +7,27 @@
 .subtitle {
   font-size: 1rem;
 }
+
+.experience {
+  padding: 20px;
+  border: 1px solid var(--sidebar-background-color);
+  border-radius: 10px;
+  position: relative;
+}
+
+.floatTitle {
+  position: absolute;
+  background: var(--main-background-color);
+  padding: 0 10px;
+  margin-top: calc(-20px - 0.7rem);
+}
+
+.itemWrapper:before {
+  content: "";
+  background-color: #0f477f;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 100%;
+  left: calc(-20px - 10px);
+}
