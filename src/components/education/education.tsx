@@ -11,32 +11,28 @@ interface EducationItemProps {
 }
 
 export function Education({ education }: { education: EducationProps }) {
-  const EducationItem = ({ institution, specialization, startDate, endDate = '' }: EducationItemProps) => (
+  const EducationListItem = ({ institution, specialization, startDate, endDate = '' }: EducationItemProps) => (
     <ListItem>{`${institution} - ${specialization}, ${startDate ? `${startDate} - ` : ''}${endDate}`}</ListItem>
+  )
+
+  const EducationList = ({ title, items }: { title: string, items: EducationProps['courses'] | EducationProps['higherEducation'] }) => (
+    <ListItem className={styles.group} hideMark>
+      <h3 className={styles.title}>{title}</h3>
+      <List padding={10}>
+        {items.map(({ institution, specialization, startDate, endDate }, index) => (
+          <EducationListItem key={index} institution={institution} specialization={specialization} startDate={startDate} endDate={endDate} />
+        ))}
+
+      </List>
+    </ListItem>
   )
 
   return (
     <div className="education">
       <Title title="Образование" />
       <List>
-        <ListItem className={styles.group} hideMark>
-          <h3 className={styles.title}>Высшее образование</h3>
-          <List padding={10}>
-            {education.higherEducation.map(({ institution, specialization, startDate, endDate }, index) => (
-              <EducationItem key={index} institution={institution} specialization={specialization} startDate={startDate} endDate={endDate} />
-
-            ))}
-          </List>
-        </ListItem>
-        <ListItem className={styles.group} hideMark>
-          <h3 className={styles.title}>Дополнительное образование</h3>
-          <List padding={10}>
-            {education.courses.map(({ institution, specialization, startDate, endDate }, index) => (
-              <EducationItem key={index} institution={institution} specialization={specialization} startDate={startDate} endDate={endDate} />
-            ))}
-
-          </List>
-        </ListItem>
+        <EducationList title="Высшее образование" items={education.higherEducation} />
+        <EducationList title="Дополнительное образование" items={education.courses} />
       </List>
     </div>
   )
