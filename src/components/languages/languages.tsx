@@ -15,8 +15,7 @@ export function Languages({ languages }: { languages: Language[] }) {
             {isNotVoid(grade)
             && (
               <span className="item__level">
-                {' '}
-                -
+                {' - '}
                 {grade}
               </span>
             )}

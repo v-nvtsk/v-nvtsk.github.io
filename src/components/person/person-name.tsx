@@ -4,11 +4,11 @@ import { QR } from '../qr-code'
 
 interface Props extends Partial<PersonalInfo> {
   showQr?: boolean
+  qrLink: string
+
 }
 
-export function Person({ name, post, showQr = false }: Props) {
-  const vCard = 'https://v-nvtsk.github.io'
-
+export function Person({ name, post, showQr = false, qrLink = '' }: Props) {
   return (
     <section className={styles.personBlock}>
       <div className={styles.personWrapper}>
@@ -17,7 +17,7 @@ export function Person({ name, post, showQr = false }: Props) {
           <h2 className={styles.personPosition}>{post}</h2>
         </div>
         <div className={showQr ? styles.qrPdf : styles.qr}>
-          <QR text={vCard} />
+          {qrLink && <QR text={qrLink} />}
         </div>
       </div>
     </section>

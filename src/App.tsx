@@ -66,7 +66,7 @@ function App() {
               <Languages languages={languages} />
               <Education education={education} />
             </Sidebar>
-            <Person name={personal.name} post={personal.post} showQr={isQrVisible} />
+            <Person name={personal.name} post={personal.post} showQr={isQrVisible} qrLink={contacts.github} />
             <Main>
               <Experience experience={experience} />
               <About about={about} />
